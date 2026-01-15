@@ -28,3 +28,16 @@ token: <jwt>
 - MongoDB
 - Mongoose
 - JWT
+
+## 📘 Contenido
+
+- [🔐 Autenticación](auth.md)
+- [👤 Usuarios](users.md)
+- [📟 Dispositivos](devices.md)
+- [📍 Locaciones](locations.md)
+- [📊 Datos y métricas](data.md)
+- [🔗 Webhooks](webhooks.md)
+- [📦 Modelos](models.md)
+
+---
+
