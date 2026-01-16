@@ -50,7 +50,7 @@ token: <jwt>
 
 ---
 
-| ⬅️ [Volver a indice](anterior.md) | [Usuarios](users.md) ➡️ |
+| ⬅️ [Volver a indice](index.md) | [Usuarios](users.md) ➡️ |
 |:--|--:|
 
 
