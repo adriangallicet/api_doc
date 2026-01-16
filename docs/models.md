@@ -31,3 +31,7 @@
 - habitacion: string
 - valor: number
 - createdTime: number
+---
+
+| ⬅️ [volver a Webhooks](webhooks.md) | [indice](index.md) ➡️ |
+|:--|--:|
