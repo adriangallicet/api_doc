@@ -67,6 +67,6 @@ dId=device-001
 ```
 <br>
 
-⬅️ [Volver a Usuarios](users.md) [Locaciones](locations.md) ➡️ 
+⬅️ [Volver a Usuarios](users.md) - [Locaciones](locations.md) ➡️ 
 
 
