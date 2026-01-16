@@ -27,7 +27,7 @@ Email duplicado
 Error de servidor
 
 ---
+<br>
 
-| ⬅️ [Volver a Autenticación](auth.md) | [Dispositivos](devices.md) ➡️ |
-|:--|--:|
+⬅️ [Volver a Autenticacion](index.md) [Dispositivos](devices.md) ➡️ 
 
