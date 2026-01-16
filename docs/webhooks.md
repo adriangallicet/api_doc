@@ -23,7 +23,6 @@ Endpoint utilizado por dispositivos IoT.
 
 ```
 
----
+<br>
 
-| ⬅️ [volver a Datos y Metricas](data.md) | [Modelos](models.md) ➡️ |
-|:--|--:|
+⬅️ [Volver a Datos y Métricas](data.md) [Modelos](models.md) ➡️ 
