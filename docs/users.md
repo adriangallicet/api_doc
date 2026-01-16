@@ -29,5 +29,5 @@ Error de servidor
 ---
 <br>
 
-⬅️ [Volver a Autenticacion](auth.md) [Dispositivos](devices.md) ➡️ 
+⬅️ [Volver a Autenticacion](auth.md) - [Dispositivos](devices.md) ➡️ 
 
