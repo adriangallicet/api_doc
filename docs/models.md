@@ -5,7 +5,6 @@
 - email: string
 - password: string (hash)
 
----
 
 ## Device
 - userId: string
@@ -15,14 +14,12 @@
 - locationId: string
 - locationName: string
 
----
 
 ## Location
 - name: string
 - description: string
 - devices: array
 
----
 
 ## Data
 - locationName: string
@@ -31,7 +28,6 @@
 - habitacion: string
 - valor: number
 - createdTime: number
----
 
 <br>
 
