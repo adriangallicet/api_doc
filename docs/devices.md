@@ -64,4 +64,9 @@ Actualiza el valor de un actuador.
 ### Query Params
 ```
 dId=device-001
+```
+---
+
+| ⬅️ [Volver a Usuarios](users.md) | [Locaciones](locations.md) ➡️ |
+|:--|--:|
 
