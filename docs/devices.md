@@ -3,8 +3,6 @@
 
 Todos los endpoints requieren autenticación.
 
----
-
 ## GET /device
 
 Obtiene los dispositivos del usuario autenticado.
