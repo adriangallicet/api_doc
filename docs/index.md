@@ -2,13 +2,13 @@
 
 API REST para la gestión de usuarios, dispositivos IoT, locaciones y métricas.
 
----
+
 
 ## 🌐 Base URL
 
 http://localhost:3001/api
 
----
+
 
 ## 🔐 Autenticación
 
@@ -19,7 +19,7 @@ La API utiliza **JWT (JSON Web Token)**.
 
 token: <jwt>
 
----
+
 
 ## 📦 Tecnologías
 
@@ -39,7 +39,8 @@ token: <jwt>
 - [🔗 Webhooks](webhooks.md)
 - [📦 Modelos](models.md)
 
----
+
+<br>
 
 |   [Autenticación](auth.md) ➡️ |
 |--:|
