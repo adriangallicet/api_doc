@@ -48,6 +48,15 @@ token: <jwt>
 
 
 
+---
+
+| ⬅️ [Volver a indice](anterior.md) | [Usuarios](users.md) ➡️ |
+|:--|--:|
+
+
+
+
+
 
 
 
