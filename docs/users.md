@@ -21,12 +21,12 @@ Registra un nuevo usuario.
   "status": "success"
 }
 ```
-### Errores
+## Errores
 Email duplicado
 
 Error de servidor
 
----
+
 <br>
 
 ⬅️ [Volver a Autenticacion](auth.md) - [Dispositivos](devices.md) ➡️ 
