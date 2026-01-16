@@ -33,5 +33,6 @@
 - createdTime: number
 ---
 
-| ⬅️ [volver a Webhooks](webhooks.md) | [indice](index.md) ➡️ |
-|:--|--:|
+<br>
+
+⬅️ [Volver a Webhooks](webhooks.md) [indice](index.md) ➡️ 
