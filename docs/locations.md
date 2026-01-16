@@ -25,4 +25,4 @@ locationId=<mongo_id>
 
 <br>
 
-⬅️ [Volver a Dispositivos](devices.md) [Datos y Métricas](data.md) ➡️ 
+⬅️ [Volver a Dispositivos](devices.md) - [Datos y Métricas](data.md) ➡️ 
