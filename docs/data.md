@@ -46,4 +46,4 @@ period=semanal | anual
 ```
 <br>
 
-⬅️ [Volver a Locaciones]locations.md) [Webhooks](webhooks.md) ➡️ 
+⬅️ [Volver a Locaciones](locations.md) [Webhooks](webhooks.md) ➡️ 
