@@ -4,8 +4,6 @@
 
 Obtiene las locaciones del usuario.
 
----
-
 ## POST /location
 
 ### Body
