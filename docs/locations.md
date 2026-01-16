@@ -22,3 +22,7 @@ Obtiene las locaciones del usuario.
 ```
 locationId=<mongo_id>
 ```
+---
+
+| ⬅️ [volver a Dispositivos](devices.md) | [Datos y Metricas](data.md) ➡️ |
+|:--|--:|
