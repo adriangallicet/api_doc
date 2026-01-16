@@ -41,3 +41,5 @@ token: <jwt>
 
 ---
 
+|   [Autenticación](auth.md) ➡️ |
+|--:|
