@@ -30,7 +30,7 @@ Inicia sesión y devuelve un token JWT.
 ### Errores
 401 → Credenciales inválidas
 
-### GET /verify
+## GET /verify
 
 Verifica si el token es válido.
 
