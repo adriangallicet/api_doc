@@ -44,3 +44,7 @@ period=semanal | anual
 }
 
 ```
+---
+
+| ⬅️ [volver a Datos y Metricas](data.md) | [Webhooks](webhooks.md) ➡️ |
+|:--|--:|
