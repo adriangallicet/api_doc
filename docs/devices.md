@@ -5,7 +5,8 @@ Un dispositivo representa un equipo físico con uno o más actuadores, asociado 
 
 ## Vista en la aplicación
 
-![Vista del módulo de dispositivos](assets/Dispositivos.jpg)
+<img src="assets/Dispositivos.jpg" alt="Vista del módulo de dispositivos" width="70%">
+
 
 ### Relación con la API
 
