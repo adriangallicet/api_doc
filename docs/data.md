@@ -1,33 +1,68 @@
 
-# 📊 Datos y Métricas
+# 📊 Datos y Metricas
+
+Este módulo permite registrar y consultar los datos generados por los dispositivos IoT.  
+Los datos representan estados reportados por un dispositivo en un momento determinado.
+
+## Relación con la API
+
+Los dispositivos envían información a la API utilizando el endpoint de creación de datos.  
+Posteriormente, estos datos pueden ser consultados para análisis o visualización.
+
+## Métodos disponibles a endpoint único
+
+- `GET /data`
+- `POST /data`
 
 ## POST /data
 
-Guarda una medición.
+Registra un nuevo dato enviado por un dispositivo.
+
+Este endpoint es utilizado para registrar un cambio de estado en uno de los actuadores del dispositivo IoT. <br>Puntualmente un estado alto, es decir, encendido del dispositivo que se hace control mediante el relé.
+### Headers
+token: { jwt }
 
 ### Body
 ```json
 {
-  "locationName": "Casa",
-  "deviceName": "Sensor Temp",
-  "deviceId": "device-001",
-  "habitacion": "Living",
-  "valor": 23.5,
-  "createdTime": 1700000000000
+  "locationName": "hospital centenario",
+  "deviceName": "pasillo central",
+  "deviceId": "675cb7729919b5f06e5ad5a4",
+  "habitacion": "101",
+  "valor": 1000,
+  "createdTime": 1735330059103
 }
-
 ```
+
+### Response 200
+```json
+{
+  "status": "success"
+}
+```
+
+### Errores
+
+401 → No autorizado
+
+500 → Error de servidor
+
 ## GET /data
 
-Devuelve métricas agregadas.
+Obtiene los datos asociados a un Usuario
 
-### Query Params
+### Headers
+token: { jwt }
+
+### Query params
 ```
-period=semanal | anual
+period=anual
 
+URL completa:
+http://localhost:3001/api/data?period=anual
 ```
-### Response
 
+### Response 200
 ```json
 {
   "status": "success",
@@ -44,6 +79,13 @@ period=semanal | anual
 }
 
 ```
+
+### Errores
+
+401 → No autorizado
+
+500 → Error de servidor
+
 <br>
 
 ⬅️ [Volver a Locaciones](locations.md) - [Webhooks](webhooks.md) ➡️ 
