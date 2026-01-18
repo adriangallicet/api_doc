@@ -2,8 +2,6 @@
 
 Documentación de la API REST para la gestión de usuarios, dispositivos IoT, locaciones y métricas.
 
----
-
 ## ¿Qué es una API REST?
 
 Una **API REST** (Representational State Transfer) es una interfaz que permite que distintas aplicaciones se comuniquen entre sí a través de **HTTP**, utilizando reglas y convenciones simples.
@@ -19,11 +17,13 @@ En una API REST:
 - Las respuestas suelen enviarse en formato **JSON**
 - El servidor no guarda estado entre peticiones (stateless)
 
----
 
-## ¿Cómo funciona esta API?
+## ¿Cómo funciona esta API REST?
 
-Esta API REST permite:
+![Diagrama de funcionamiento de la API REST](assets/rest-diagrama.png)
+
+
+Ella permite:
 
 - Registrar y autenticar usuarios
 - Gestionar dispositivos IoT
@@ -38,7 +38,7 @@ Todas las peticiones se realizan sobre la siguiente URL base:
 
 ## 🌐 Base URL
 
-http://localhost:3001/api
+http://127.0.0.1:3001/api
 
 
 
