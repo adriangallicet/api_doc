@@ -22,9 +22,9 @@ Registra un nuevo usuario.
 }
 ```
 ## Errores
-Email duplicado
-
-Error de servidor
+Existen 2 posibles errores:
+- El email debe ser único para evitar datos duplicados.
+- Error de servidor
 
 
 <br>
