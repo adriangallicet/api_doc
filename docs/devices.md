@@ -62,6 +62,9 @@ Actualiza el valor de un actuador.
 ### Query Params
 ```
 dId=device-001
+
+Request completa:
+http://localhost:3001/api/device?dId=device-001
 ```
 <br>
 
