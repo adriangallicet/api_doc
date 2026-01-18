@@ -23,7 +23,7 @@ Campos enviados:
 
 
 
-## Endpoints disponibles
+## Métodos disponibles
 
 - `GET /device`
 - `POST /device`
