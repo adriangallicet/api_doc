@@ -19,8 +19,7 @@ En una API REST:
 
 
 ## ¿Cómo funciona esta API REST?
-
-![Diagrama de funcionamiento de la API REST](assets/rest-diagrama.png)
+  <img src="assets/rest-diagrama.png" alt="Diagrama de funcionamiento" width="70%">
 
 
 Ella permite:
