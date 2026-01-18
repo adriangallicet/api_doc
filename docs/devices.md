@@ -1,64 +1,99 @@
-
 # 📟 Dispositivos
 
-Todos los endpoints requieren autenticación.
+Este módulo permite gestionar los dispositivos IoT del sistema.  
+Un dispositivo representa un equipo físico con uno o más actuadores, asociado a una ubicación.
+
+## Vista en la aplicación
+
+![Vista del módulo de dispositivos](assets/Dispositivos.jpg)
+
+### Relación con la API
+
+El formulario **Nuevo dispositivo** utiliza el endpoint:
+
+- `POST /device`
+
+Campos enviados:
+- `name` → Nombre del dispositivo
+- `dId` → Identificador único
+- `denomination` → Código interno
+- `actuators` → Número de actuadores
+- `location` → ID de la locación
+
+
+
+## Endpoints disponibles
+
+- `GET /device`
+- `POST /device`
+- `DELETE /device`
+
 
 ## GET /device
 
-Obtiene los dispositivos del usuario autenticado.
+Obtiene todos los dispositivos registrados del usuario autenticado.
 
 ### Headers
-token: jwt
+token: { jwt }
 
 
-### Response
+### Response 200
 ```json
 {
   "status": "success",
-  "data": [
+  "devices": [
     {
-      "_id": "...",
       "dId": "device-001",
       "name": "Sensor",
-      "actuators": [],
-      "locationName": "Casa"
+      "location": "Casa",
+      "actuators": 0
     }
   ]
 }
+
+
+
 ```
+Errores
+
+401 → No autorizado
+
 ## POST /device
 
-Crea un nuevo dispositivo.
+Registra un nuevo dispositivo.
 
-### Body
-```json
-{
-  "newDevice": {
-    "dId": "device-001",
-    "name": "Sensor",
-    "locationId": "123",
-    "locationName": "Casa",
-    "actuators": []
-  }
-}
-
-```
-## PUT /device
-
-Actualiza el valor de un actuador.
-
-### Body
+### Headers
+token: { jwt }
 
 ```json
+Body
 {
-  "dId": "mongo_device_id",
-  "actuatorId": "relay1",
-  "newValue": true
+  "dId": "device-002",
+  "name": "Luz",
+  "denomination": "100",
+  "actuators": 1,
+  "location": "loc-001"
 }
-
-
 ```
+
+### Response 200
+```json
+{
+  "status": "success"
+}
+```
+
+### Errores
+
+400 → Datos inválidos
+
+409 → Dispositivo duplicado
+
+500 → Error de servidor
+
 ## DELETE /device
+
+Elimina un dispositivo existente.
 ### Query Params
 ```
 dId=device-001
@@ -66,6 +101,17 @@ dId=device-001
 Request completa:
 http://localhost:3001/api/device?dId=device-001
 ```
+### Response 200
+```json
+{
+  "status": "success"
+}
+```
+### Errores
+
+404 → Dispositivo no encontrado
+
+401 → No autorizado
 <br>
 
 ⬅️ [Volver a Usuarios](users.md) - [Locaciones](locations.md) ➡️ 
