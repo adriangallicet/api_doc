@@ -1,5 +1,29 @@
 # 🔐 Autenticación
 
+Este módulo gestiona el acceso de los usuarios a la API mediante autenticación basada en tokens JWT.
+
+
+## Vista en la aplicación
+
+  <img src="assets/login.jpg" alt="Vista de autenticación" width="65%">
+
+
+### Relación con la API
+
+Las pantallas de login y registro utilizan los siguientes métodos:
+
+- `POST /login`
+- `POST /register`
+- `GET /verify`
+
+
+## Endpoints disponibles
+
+- `/login`
+- `/register`
+- `/verify`
+
+
 ## POST /login
 
 Inicia sesión y devuelve un token JWT.
@@ -10,15 +34,12 @@ Inicia sesión y devuelve un token JWT.
   "email": "user@mail.com",
   "password": "password"
 }
-
 ```
-
 ### Response 200
-
 ```json
 {
   "status": "success",
-  "token": "jwt_token",
+  "token": "<jwt>",
   "userData": {
     "_id": "...",
     "name": "Juan",
@@ -28,22 +49,40 @@ Inicia sesión y devuelve un token JWT.
 ```
 
 ### Errores
+
 401 → Credenciales inválidas
 
-## GET /verify
+## POST /register
 
-Verifica si el token es válido.
+Registra un nuevo usuario.
 
-### Headers
-```makefile
-token: <jwt>
+### Body
+```json
+{
+  "name": "Juan",
+  "email": "juan@mail.com",
+  "password": "password"
+}
 ```
 ### Response 200
 ```json
 {
   "status": "success"
 }
+```
+## GET /verify
 
+Verifica si el token es válido.
+
+### Headers
+token: { jwt }
+
+### Response 200
+
+```json
+{
+  "status": "success"
+}
 ```
 
 <br>
