@@ -45,9 +45,9 @@ token: { jwt }
   "devices": [
     {
       "dId": "device-001",
-      "name": "Sensor",
-      "location": "Casa",
-      "actuators": 0
+      "name": "Pasillo A",
+      "location": "Hospital X",
+      "actuators": 7
     }
   ]
 }
@@ -55,9 +55,9 @@ token: { jwt }
 
 
 ```
-Errores
+### Errores
 
-401 → No autorizado
+500 → Error de servidor
 
 ## POST /device
 
@@ -66,8 +66,8 @@ Registra un nuevo dispositivo.
 ### Headers
 token: { jwt }
 
+### Body
 ```json
-Body
 {
   "dId": "device-002",
   "name": "Luz",
@@ -85,10 +85,6 @@ Body
 ```
 
 ### Errores
-
-400 → Datos inválidos
-
-409 → Dispositivo duplicado
 
 500 → Error de servidor
 
@@ -110,9 +106,7 @@ http://localhost:3001/api/device?dId=device-001
 ```
 ### Errores
 
-404 → Dispositivo no encontrado
-
-401 → No autorizado
+500 → Error de servidor
 <br>
 
 ⬅️ [Volver a Usuarios](users.md) - [Locaciones](locations.md) ➡️ 
