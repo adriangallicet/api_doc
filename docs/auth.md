@@ -80,7 +80,7 @@ token: { jwt }
 
 <br>
 
-⬅️ [Volver a indice](index.md) - [Usuarios](users.md) ➡️ 
+⬅️ [Volver a Usuarios](users.md) - [Dispositivos](devices.md) ➡️ 
 
 
 
