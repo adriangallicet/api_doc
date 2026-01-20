@@ -34,18 +34,24 @@ token: { jwt }
 }
 ```
 
-### Response 200
+### Response 201 created
 ```json
 {
-  "status": "success"
+  "status": "success",
+  "message": 'Data saved successfully'
 }
 ```
 
 ### Errores
 
-401 → No autorizado
-
 500 → Error de servidor
+```json
+{
+  "status": "error",
+  "message": 'Failed to save data'
+}
+```
+
 
 ## GET /data
 
@@ -82,9 +88,28 @@ http://localhost:3001/api/data?period=anual
 
 ### Errores
 
-401 → No autorizado
+400 → Bad request
 
+```json
+{
+  "status": "error",
+  "message": "Periodo no válido. Debe ser semanal o anual"
+}
+```
+404 → Not Found
+```json
+{
+  "status": "error",
+  "message": "No se encontraron datos para el periodo solicitado"
+}
+```
 500 → Error de servidor
+```json
+{
+  "status": "error",
+  "message": "Error al obtener los datos"
+}
+```
 
 <br>
 
