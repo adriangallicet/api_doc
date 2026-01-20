@@ -47,9 +47,11 @@ token: { jwt }
 ```
 ### Errores
 
-401 → No autorizado
-
 500 → Error de servidor
+{
+  "status": "error",
+  "error": { error }
+}
 
 ## POST /location
 Crea una nueva locación.
@@ -77,9 +79,11 @@ token: { jwt }
 ```
 ### Errores
 
-400 → Datos inválidos
-
 500 → Error de servidor
+{
+  "status": "error",
+  "error": { error }
+}
 
 ## DELETE /location
 
@@ -106,11 +110,11 @@ http://localhost:3001/api/location?dId=locationId=<mongo_id>
 
 ### Errores
 
-401 → No autorizado
-
-404 → Locación no encontrada
-
 500 → Error de servidor
+{
+  "status": "error",
+  "error": { error }
+}
 <br>
 
 ⬅️ [Volver a Dispositivos](devices.md) - [Datos y Métricas](data.md) ➡️ 
