@@ -6,6 +6,11 @@
 
 Registra un nuevo usuario.
 
+## Vista en la aplicación
+
+  <img src="assets/register.jpg" alt="Vista de autenticación" width="65%">
+
+
 ### Body
 ```json
 {
@@ -14,19 +19,20 @@ Registra un nuevo usuario.
   "password": "password"
 }
 ```
-
-### Response
+### Response 200
 ```json
 {
   "status": "success"
 }
 ```
-## Errores
-Existen 2 posibles errores:
-- El email debe ser único para evitar datos duplicados.
-- Error de servidor
-
-
+### Errores
+500 → Error de servidor
+```json
+{
+  "status": "error",
+  "error": { error }
+}
+```
 <br>
 
 ⬅️ [Volver a Autenticacion](auth.md) - [Dispositivos](devices.md) ➡️ 
