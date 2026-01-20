@@ -19,7 +19,6 @@ Las pantallas de login y registro utilizan los siguientes métodos:
 ## Endpoints disponibles
 
 - `/login`
-- `/register`
 - `/verify`
 
 
