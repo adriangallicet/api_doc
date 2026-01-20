@@ -35,5 +35,5 @@ Registra un nuevo usuario.
 ```
 <br>
 
-⬅️ [Volver a Autenticacion](auth.md) - [Dispositivos](devices.md) ➡️ 
+⬅️ [Volver a Indice](index.md) - [Autenticación](auth.md) ➡️ 
 
