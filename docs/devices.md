@@ -154,6 +154,6 @@ http://localhost:3001/api/device?dId=device-001
 ```
 <br>
 
-⬅️ [Volver a Usuarios](users.md) - [Locaciones](locations.md) ➡️ 
+⬅️ [Volver a Autenticación](auth.md) - [Locaciones](locations.md) ➡️ 
 
 
