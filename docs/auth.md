@@ -57,33 +57,6 @@ Inicia sesión y devuelve un token JWT.
   "error": "Invalid Credentials"
 }
 ```
-
-## POST /register
-
-Registra un nuevo usuario.
-
-### Body
-```json
-{
-  "name": "Juan",
-  "email": "juan@mail.com",
-  "password": "password"
-}
-```
-### Response 200
-```json
-{
-  "status": "success"
-}
-```
-### Errores
-500 → Error de servidor
-```json
-{
-  "status": "error",
-  "error": { error }
-}
-```
 ## GET /verify
 
 Verifica si el token mediante el cual se esta intentando acceder es válido.
