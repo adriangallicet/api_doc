@@ -1,6 +1,12 @@
 # 🔔 Webhooks
 
-El objetivo de este módulo es responder a las solicitudes de configuracion que realizan los dispositivos.
+El objetivo de este módulo es responder a las solicitudes de información de configuración que realizan los dispositivos.
+
+Nota: el nombre no hace referencia a los ganchos que se utilizan en las tecnologías web, simplemente es utilizado para separar logicamente esta sección con el modelo device.
+<br>
+<br>
+Webhooks → comunicacion con el dispositivo <br>
+device → todo lo inherente a creacion, eliminacion y obtencion de los dispositivos en la plataforma web. 
 
 
 ## Relación con la API
