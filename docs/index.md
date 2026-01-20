@@ -61,9 +61,8 @@ token: <jwt>
 - JWT
 
 ## 📘 Contenido
-
-- [🔐 Autenticación](auth.md)
 - [👤 Usuarios](users.md)
+- [🔐 Autenticación](auth.md)
 - [📟 Dispositivos](devices.md)
 - [📍 Locaciones](locations.md)
 - [📊 Datos y métricas](data.md)
@@ -73,5 +72,5 @@ token: <jwt>
 
 <br>
 
-   [Autenticación](auth.md) ➡️ 
+   [Usuarios](users.md) ➡️ 
 
