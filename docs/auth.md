@@ -13,7 +13,6 @@ Este módulo gestiona el acceso de los usuarios a la API mediante autenticación
 Las pantallas de login y registro utilizan los siguientes métodos:
 
 - `POST /login`
-- `POST /register`
 - `GET /verify`
 
 
