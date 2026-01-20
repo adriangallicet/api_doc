@@ -51,6 +51,12 @@ Inicia sesión y devuelve un token JWT.
 ### Errores
 
 401 → Credenciales inválidas
+```json
+{
+  "status": "error",
+  "error": "Invalid Credentials"
+}
+```
 
 ## POST /register
 
@@ -70,9 +76,17 @@ Registra un nuevo usuario.
   "status": "success"
 }
 ```
+### Errores
+500 → Error de servidor
+```json
+{
+  "status": "error",
+  "error": { error }
+}
+```
 ## GET /verify
 
-Verifica si el token es válido.
+Verifica si el token mediante el cual se esta intentando acceder es válido.
 
 ### Headers
 token: { jwt }
@@ -82,6 +96,14 @@ token: { jwt }
 ```json
 {
   "status": "success"
+}
+```
+### Errores
+401 → credenciales invalidas
+```json
+{
+  "status": "error",
+  "error": { error }
 }
 ```
 
