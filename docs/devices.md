@@ -41,15 +41,30 @@ token: { jwt }
 ### Response 200
 ```json
 {
-  "status": "success",
-  "devices": [
-    {
-      "dId": "device-001",
-      "name": "Pasillo A",
-      "location": "Hospital X",
-      "actuators": 7
-    }
-  ]
+    "status": "success",
+    "data": [
+        {
+            "_id": "687eac95e37a35affe53f0ea",
+            "userId": "683a1f9413ca368f47a7b655",
+            "dId": "7234",
+            "name": "Pasillo A",
+            "selected": false,
+            "actuators": [
+                {
+                    "id": "100",
+                    "value": false
+                },
+                {
+                    "id": "101",
+                    "value": false
+                },
+            ],
+            "locationId": "687eaa45e37a35affe53f0e1",
+            "locationName": "Hospital de zona",
+            "createdTime": 1753132181486,
+            "__v": 0
+        }
+    ]
 }
 
 
@@ -58,6 +73,12 @@ token: { jwt }
 ### Errores
 
 500 → Error de servidor
+```json
+{
+  "status": "error",
+  "error": error
+}
+```
 
 ## POST /device
 
@@ -69,11 +90,22 @@ token: { jwt }
 ### Body
 ```json
 {
-  "dId": "device-002",
-  "name": "Luz",
-  "denomination": "100",
-  "actuators": 1,
-  "location": "loc-001"
+"newDevice": {
+    "dId": "device-001",
+    "name": "Sensor",
+    "locationId": "123",
+    "locationName": "Casa",
+   "actuators": [
+                {
+                    "id": "100",
+                    "value": false
+                },
+                {
+                    "id": "101",
+                    "value": false
+                },
+            ],
+  }
 }
 ```
 
@@ -87,6 +119,13 @@ token: { jwt }
 ### Errores
 
 500 → Error de servidor
+```json
+{
+  "status": "error",
+  "error": error
+}
+```
+
 
 ## DELETE /device
 
@@ -107,6 +146,12 @@ http://localhost:3001/api/device?dId=device-001
 ### Errores
 
 500 → Error de servidor
+```json
+{
+  "status": "error",
+  "error": error
+}
+```
 <br>
 
 ⬅️ [Volver a Usuarios](users.md) - [Locaciones](locations.md) ➡️ 
