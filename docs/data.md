@@ -38,7 +38,7 @@ token: { jwt }
 ```json
 {
   "status": "success",
-  "message": 'Data saved successfully'
+  "message": "Data saved successfully"
 }
 ```
 
@@ -48,7 +48,7 @@ token: { jwt }
 ```json
 {
   "status": "error",
-  "message": 'Failed to save data'
+  "message": "Failed to save data"
 }
 ```
 
