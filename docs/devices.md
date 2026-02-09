@@ -8,10 +8,18 @@ Un dispositivo representa un equipo físico con uno o más actuadores, asociado 
 <img src="assets/Dispositivos.jpg" alt="Vista del módulo de dispositivos" width="70%">
 
 
-### Relación con la API
+## Relación con la API
 
+### Métodos disponibles
+
+- `GET /device`
+- `POST /device`
+- `DELETE /device`
+
+### Endpoints protegidos
 🔐 Todos los endpoints de esta sección requieren una sesión activa.
-
+## POST /device
+Registra un nuevo dispositivo.
 El formulario **Nuevo dispositivo** utiliza el endpoint:
 
 - `POST /device`
@@ -23,13 +31,45 @@ Campos enviados:
 - `actuators` → Número de actuadores
 - `location` → ID de la locación
 
+### Body
+```json
+{
+"newDevice": {
+    "dId": "device-001",
+    "name": "Sensor",
+    "locationId": "123",
+    "locationName": "Casa",
+   "actuators": [
+                {
+                    "id": "100",
+                    "value": false
+                },
+                {
+                    "id": "101",
+                    "value": false
+                },
+            ],
+  }
+}
+```
 
+### Response 200
+```json
+{
+  "status": "success"
+}
+```
 
-## Métodos disponibles
+### Errores
 
-- `GET /device`
-- `POST /device`
-- `DELETE /device`
+500 → Error de servidor
+```json
+{
+  "status": "error",
+  "error": error
+}
+```
+
 
 
 ## GET /device
@@ -78,51 +118,6 @@ Obtiene todos los dispositivos registrados del usuario autenticado.
   "error": error
 }
 ```
-
-## POST /device
-
-Registra un nuevo dispositivo.
-
-### Body
-```json
-{
-"newDevice": {
-    "dId": "device-001",
-    "name": "Sensor",
-    "locationId": "123",
-    "locationName": "Casa",
-   "actuators": [
-                {
-                    "id": "100",
-                    "value": false
-                },
-                {
-                    "id": "101",
-                    "value": false
-                },
-            ],
-  }
-}
-```
-
-### Response 200
-```json
-{
-  "status": "success"
-}
-```
-
-### Errores
-
-500 → Error de servidor
-```json
-{
-  "status": "error",
-  "error": error
-}
-```
-
-
 ## DELETE /device
 
 Elimina un dispositivo existente.
