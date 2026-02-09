@@ -43,12 +43,12 @@ http://127.0.0.1:3001/api
 
 ## 🔐 Autenticación
 
-La API utiliza **JWT (JSON Web Token)**.
+Esta API utiliza autenticación basada en JWT almacenado en cookies httpOnly.
 
-- El token se obtiene al hacer login
-- El token debe enviarse en los headers de cada request protegido
-
-token: <jwt>
+- El cliente **no accede al token**
+- El token se setea automáticamente al hacer login
+- Las cookies se envían en cada request protegida
+- No se utiliza localStorage
 
 
 
