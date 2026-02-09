@@ -45,12 +45,13 @@ Obtiene todas las locaciones del usuario autenticado.
 }
 ```
 ### Errores
-
 500 → Error de servidor
+```json
 {
   "status": "error",
   "error": { error }
 }
+```
 
 ## POST /location
 Crea una nueva locación.
@@ -73,12 +74,13 @@ Crea una nueva locación.
 }
 ```
 ### Errores
-
 500 → Error de servidor
+```json
 {
   "status": "error",
   "error": { error }
 }
+```
 
 ## DELETE /location
 
@@ -101,12 +103,13 @@ http://localhost:3001/api/location?dId=locationId=<mongo_id>
 ```
 
 ### Errores
-
 500 → Error de servidor
+```json
 {
   "status": "error",
   "error": { error }
 }
+```
 <br>
 
 ⬅️ [Volver a Dispositivos](devices.md) - [Datos y Métricas](data.md) ➡️ 
