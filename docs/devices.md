@@ -16,8 +16,8 @@ Un dispositivo representa un equipo físico con uno o más actuadores, asociado 
 - `POST /device`
 - `DELETE /device`
 
-### Endpoints protegidos
-🔐 Todos los endpoints de esta sección requieren una sesión activa.
+### 🔐 Endpoints protegidos
+Todos los endpoints de esta sección requieren una sesión activa.
 ## POST /device
 Registra un nuevo dispositivo.
 El formulario **Nuevo dispositivo** utiliza el endpoint:
