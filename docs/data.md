@@ -9,6 +9,9 @@ Los datos representan estados reportados por un dispositivo en un momento determ
 Los dispositivos envían información a la API utilizando el endpoint de creación de datos.  
 Posteriormente, estos datos pueden ser consultados para análisis o visualización.
 
+### 🔐 Endpoints protegidos
+Todos los endpoints de esta sección requieren una sesión activa.
+
 ## Métodos disponibles a endpoint único
 
 - `GET /data`
@@ -19,8 +22,6 @@ Posteriormente, estos datos pueden ser consultados para análisis o visualizaci�
 Registra un nuevo dato enviado por un dispositivo.
 
 Este endpoint es utilizado para registrar un cambio de estado en uno de los actuadores del dispositivo IoT. <br>Puntualmente un estado alto, es decir, encendido del dispositivo que se hace control mediante el relé.
-### Headers
-token: { jwt }
 
 ### Body
 ```json
@@ -56,9 +57,6 @@ token: { jwt }
 ## GET /data
 
 Obtiene los datos asociados a un Usuario
-
-### Headers
-token: { jwt }
 
 ### Query params
 ```
