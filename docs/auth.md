@@ -24,7 +24,8 @@ Las pantallas de login y registro utilizan los siguientes métodos:
 
 ## POST /login
 
-Inicia sesión y devuelve un token JWT.
+- Inicia sesión
+- Setea una cookie auth_token
 
 ### Body
 ```json
@@ -37,7 +38,6 @@ Inicia sesión y devuelve un token JWT.
 ```json
 {
   "status": "success",
-  "token": "<jwt>",
   "userData": {
     "_id": "...",
     "name": "Juan",
@@ -57,16 +57,18 @@ Inicia sesión y devuelve un token JWT.
 ```
 ## GET /verify
 
-Verifica si el token mediante el cual se esta intentando acceder es válido.
-
-### Headers
-token: { jwt }
+Verifica si el usuario está autenticado y devuelve sus datos básicos
 
 ### Response 200
 
 ```json
 {
-  "status": "success"
+  "status": "success",
+  "userData": {
+    "_id": "...",
+    "name": "Juan",
+    "email": "user@mail.com"
+  }
 }
 ```
 ### Errores
