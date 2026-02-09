@@ -9,7 +9,10 @@ Hospitales, Clinicas, Cooperativas, etc.
 
   <img src="assets/locations.jpg" alt="Vista de locaciones" width="65%">
 
-### Relación con la API
+## Relación con la API
+
+### 🔐 Endpoints protegidos
+Todos los endpoints de esta sección requieren una sesión activa.
 
 El módulo de locaciones del frontend utiliza los siguientes métodos al único endpoint:
 
@@ -23,10 +26,6 @@ El módulo de locaciones del frontend utiliza los siguientes métodos al único 
 ## GET /location
 
 Obtiene todas las locaciones del usuario autenticado.
-
-### Headers
-token: { jwt }
-
 
 ### Response 200
 ```json
@@ -56,10 +55,6 @@ token: { jwt }
 ## POST /location
 Crea una nueva locación.
 
-### Headers
-token: { jwt }
-
-
 ### Body
 ```json
 {
@@ -88,9 +83,6 @@ token: { jwt }
 ## DELETE /location
 
 Elimina una locación existente.
-
-### Headers
-token: { jwt }
 
 Query params
 ```
