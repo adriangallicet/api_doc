@@ -40,18 +40,6 @@ Todas las peticiones se realizan sobre la siguiente URL base:
 http://127.0.0.1:3001/api
 
 
-
-## 🔐 Autenticación
-
-Esta API utiliza autenticación basada en JWT almacenado en cookies httpOnly.
-
-- El cliente **no accede al token**
-- El token se setea automáticamente al hacer login
-- Las cookies se envían en cada request protegida
-- No se utiliza localStorage
-
-
-
 ## 📦 Tecnologías
 
 - Node.js
