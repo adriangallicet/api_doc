@@ -1,6 +1,6 @@
 # 🔐 Autenticación
 
-Esta API utiliza cookies HttpOnly para manejar la autenticación del usuario.
+Esta API utiliza autenticación basada en JWT almacenado en cookies httpOnly.
 
 Cuando un usuario inicia sesión correctamente, el servidor genera un JWT y lo guarda en una cookie llamada auth_token.
 Esta cookie es almacenada por el navegador al iniciar sesión y se envía automáticamente en cada solicitud al servidor,
