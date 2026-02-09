@@ -10,6 +10,8 @@ Un dispositivo representa un equipo físico con uno o más actuadores, asociado 
 
 ### Relación con la API
 
+🔐 Todos los endpoints de esta sección requieren una sesión activa.
+
 El formulario **Nuevo dispositivo** utiliza el endpoint:
 
 - `POST /device`
@@ -33,9 +35,6 @@ Campos enviados:
 ## GET /device
 
 Obtiene todos los dispositivos registrados del usuario autenticado.
-
-### Headers
-token: { jwt }
 
 
 ### Response 200
@@ -83,9 +82,6 @@ token: { jwt }
 ## POST /device
 
 Registra un nuevo dispositivo.
-
-### Headers
-token: { jwt }
 
 ### Body
 ```json
