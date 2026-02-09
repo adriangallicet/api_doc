@@ -19,7 +19,7 @@ En una API REST:
 
 
 ## ¿Cómo funciona esta API REST?
-  <img src="assets/rest-diagrama.png" alt="Diagrama de funcionamiento" width="70%">
+  <img src="assets/rest-diagrama.jpg" alt="Diagrama de funcionamiento" width="70%">
 
 
 Ella permite:
