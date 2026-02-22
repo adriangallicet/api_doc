@@ -43,7 +43,7 @@ Todas las peticiones se realizan sobre la siguiente URL base:
 
 ## 🌐 Base URL
 
-http://127.0.0.1:3001/api
+http://localhost:3001/api
 
 
 ## 📦 Tecnologías
