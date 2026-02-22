@@ -2,6 +2,12 @@
 
 Documentación de la API REST para la gestión de usuarios, dispositivos IoT, locaciones y métricas.
 
+El documento completo del trabajo, donde se detalla el diseño conceptual y la arquitectura general del sistema se encuentra disponible en:
+
+🔗 https://github.com/adriangallicet/tesis-plataforma-iot
+
+Se recomienda su lectura para comprender el enfoque integral del proyecto y su marco teórico.
+
 ## ¿Qué es una API REST?
 
 Una **API REST** (Representational State Transfer) es una interfaz que permite que distintas aplicaciones se comuniquen entre sí a través de **HTTP**, utilizando reglas y convenciones simples.
